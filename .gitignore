@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Data & model artifacts (keep folder structure via .gitkeep)
+data/raw_videos/*
+data/frames/*
+data/dataset/*
+models/*
+output/*
+runs/
+*.pt
+!yolov8n.pt.gitkeep
+
+# Misc
+.DS_Store
+*.log
