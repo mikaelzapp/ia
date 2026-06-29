@@ -1,0 +1,9 @@
+# Core AI / CV / video stack for the auto-crop pipeline.
+# Kept lean: ultralytics already pulls in torch, numpy, opencv and pyyaml,
+# but the directly-imported packages are pinned explicitly for clarity.
+
+ultralytics>=8.1.0,<9.0.0      # YOLOv8 training + inference
+opencv-python>=4.8.0           # frame extraction, heuristics, curation GUI
+moviepy==1.0.3                 # final crop/resize/render with audio
+numpy>=1.24,<2.0               # array math / median stabilisation
+PyYAML>=6.0                    # dataset.yaml generation
