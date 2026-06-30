@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunplay IPTV — Entretenimento Premium</title>
+  <meta name="description" content="Sunplay IPTV: +25.000 filmes em 4K, +15.000 séries, +5.000 canais ao vivo. Qualidade Full HD e 4K sem travamento. Assine agora!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-sun"></span>
+        <span class="logo-text">SUNPLAY</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#vantagens">Vantagens</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#planos" class="nav-cta">Assinar Agora</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="sun-orb"></div>
+      <div class="sun-rays"></div>
+      <div class="grid-floor"></div>
+      <div class="particles" id="particles"></div>
+    </div>
+    <div class="container hero-content">
+      <span class="hero-badge">Streaming Premium #1 do Brasil</span>
+      <h1 class="hero-title">
+        Sua nova era de
+        <span class="gradient-text">entretenimento</span>
+        começa aqui.
+      </h1>
+      <p class="hero-subtitle">
+        +25.000 filmes em 4K, +15.000 séries atualizadas diariamente e +5.000 canais ao vivo.
+        Tudo sem travamento, com qualidade impecável.
+      </p>
+      <div class="hero-actions">
+        <a href="#planos" class="btn btn-primary btn-lg">
+          <span>Assinar Agora</span>
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#vantagens" class="btn btn-outline btn-lg">Conhecer Vantagens</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="25000">0</span>
+          <span class="stat-label">Filmes 4K</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="15000">0</span>
+          <span class="stat-label">Séries</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="5000">0</span>
+          <span class="stat-label">Canais ao vivo</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Role para baixo</span>
+      <div class="scroll-indicator"></div>
+    </div>
+  </section>
+
+  <!-- ======== PLANOS ======== -->
+  <section class="section plans-section" id="planos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Planos</span>
+        <h2 class="section-title">Escolha o plano ideal <span class="gradient-text">para você</span></h2>
+        <p class="section-desc">Todos os planos incluem acesso completo ao catálogo, qualidade 4K e suporte 24h.</p>
+      </div>
+
+      <div class="plans-grid">
+        <!-- Mensal -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <span class="plan-icon">&#9788;</span>
+            <h3 class="plan-name">Mensal</h3>
+            <p class="plan-period">1 mês de acesso</p>
+          </div>
+          <div class="plan-price">
+            <span class="currency">R$</span>
+            <span class="amount">30</span>
+            <span class="cents">,00</span>
+            <span class="per">/mês</span>
+          </div>
+          <ul class="plan-features">
+            <li>Catálogo completo</li>
+            <li>Qualidade 4K</li>
+            <li>Suporte 24h</li>
+            <li>Cancele quando quiser</li>
+          </ul>
+          <a href="#contato" class="btn btn-outline btn-block">Escolher Plano</a>
+        </div>
+
+        <!-- Bimestral -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <span class="plan-icon">&#9733;</span>
+            <h3 class="plan-name">Bimestral</h3>
+            <p class="plan-period">2 meses de acesso</p>
+          </div>
+          <div class="plan-price">
+            <span class="currency">R$</span>
+            <span class="amount">50</span>
+            <span class="cents">,00</span>
+            <span class="per">/2 meses</span>
+          </div>
+          <div class="plan-savings">Economia de R$ 10,00</div>
+          <ul class="plan-features">
+            <li>Catálogo completo</li>
+            <li>Qualidade 4K</li>
+            <li>Suporte 24h</li>
+            <li>Cancele quando quiser</li>
+          </ul>
+          <a href="#contato" class="btn btn-outline btn-block">Escolher Plano</a>
+        </div>
+
+        <!-- Trimestral -->
+        <div class="plan-card">
+          <div class="plan-header">
+            <span class="plan-icon">&#9830;</span>
+            <h3 class="plan-name">Trimestral</h3>
+            <p class="plan-period">3 meses de acesso</p>
+          </div>
+          <div class="plan-price">
+            <span class="currency">R$</span>
+            <span class="amount">71</span>
+            <span class="cents">,99</span>
+            <span class="per">/3 meses</span>
+          </div>
+          <div class="plan-savings">Economia de R$ 18,01</div>
+          <ul class="plan-features">
+            <li>Catálogo completo</li>
+            <li>Qualidade 4K</li>
+            <li>Suporte 24h</li>
+            <li>Cancele quando quiser</li>
+          </ul>
+          <a href="#contato" class="btn btn-outline btn-block">Escolher Plano</a>
+        </div>
+
+        <!-- Anual — Destaque -->
+        <div class="plan-card plan-featured">
+          <div class="plan-badge">Mais Popular</div>
+          <div class="plan-header">
+            <span class="plan-icon">&#9728;</span>
+            <h3 class="plan-name">Anual</h3>
+            <p class="plan-period">12 meses de acesso</p>
+          </div>
+          <div class="plan-price">
+            <span class="currency">R$</span>
+            <span class="amount">219</span>
+            <span class="cents">,99</span>
+            <span class="per">/ano</span>
+          </div>
+          <div class="plan-savings plan-savings-highlight">Economia de 3 meses grátis</div>
+          <ul class="plan-features">
+            <li>Catálogo completo</li>
+            <li>Qualidade 4K</li>
+            <li>Suporte 24h prioritário</li>
+            <li>Cancele quando quiser</li>
+            <li>Melhor custo-benefício</li>
+          </ul>
+          <a href="#contato" class="btn btn-primary btn-block">Escolher Plano</a>
+        </div>
+
+        <!-- Fidelidade — Destaque Especial -->
+        <div class="plan-card plan-loyalty">
+          <div class="plan-badge plan-badge-loyalty">Exclusivo Fidelidade</div>
+          <div class="plan-header">
+            <span class="plan-icon">&#9830;</span>
+            <h3 class="plan-name">Fidelidade</h3>
+            <p class="plan-period">12 meses de acesso</p>
+          </div>
+          <div class="plan-price-loyalty">
+            <div class="loyalty-first">
+              <span class="loyalty-label">1.º mês</span>
+              <div>
+                <span class="currency">R$</span>
+                <span class="amount">50</span>
+                <span class="cents">,00</span>
+              </div>
+            </div>
+            <div class="loyalty-divider"></div>
+            <div class="loyalty-rest">
+              <span class="loyalty-label">Meses 2–12</span>
+              <div>
+                <span class="currency">R$</span>
+                <span class="amount">25</span>
+                <span class="cents">,00</span>
+                <span class="per">/mês</span>
+              </div>
+            </div>
+          </div>
+          <div class="plan-savings plan-savings-highlight">Total: R$ 325,00 — O menor custo mensal!</div>
+          <ul class="plan-features">
+            <li>Catálogo completo</li>
+            <li>Qualidade 4K</li>
+            <li>Suporte 24h VIP</li>
+            <li>Prioridade em novidades</li>
+            <li>Menor preço por mês: ~R$ 27/mês</li>
+          </ul>
+          <a href="#contato" class="btn btn-loyalty btn-block">Quero Fidelidade</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== VANTAGENS ======== -->
+  <section class="section advantages-section" id="vantagens">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Vantagens</span>
+        <h2 class="section-title">Por que escolher a <span class="gradient-text">Sunplay?</span></h2>
+        <p class="section-desc">Tecnologia de ponta e a melhor experiência de streaming do Brasil.</p>
+      </div>
+
+      <div class="advantages-grid">
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>+25.000 Filmes em 4K</h3>
+          <p>O maior catálogo de filmes em altíssima definição. Lançamentos e clássicos atualizados semanalmente.</p>
+        </div>
+
+        <div class="advantage-card">
+          <div class="advantage-icon icon-cyan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          </div>
+          <h3>+15.000 Séries</h3>
+          <p>Séries de todos os gêneros atualizadas diariamente. Assista episódios novos antes de todo mundo.</p>
+        </div>
+
+        <div class="advantage-card">
+          <div class="advantage-icon icon-pink">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+          </div>
+          <h3>+5.000 Canais ao Vivo</h3>
+          <p>Todos os canais ETV, esportes, notícias, filmes e entretenimento ao vivo sem antena.</p>
+        </div>
+
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Full HD e 4K</h3>
+          <p>Qualidade de imagem impecável em todas as telas. Sem pixelização, sem buffering.</p>
+        </div>
+
+        <div class="advantage-card">
+          <div class="advantage-icon icon-cyan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Sem Travamento</h3>
+          <p>Servidores de alta performance garantem streaming fluido 24/7, sem quedas ou interrupções.</p>
+        </div>
+
+        <div class="advantage-card">
+          <div class="advantage-icon icon-pink">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>Suporte 24 Horas</h3>
+          <p>Equipe dedicada pronta para te ajudar a qualquer momento. Atendimento rápido e humanizado.</p>
+        </div>
+
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <h3>Pagamento Seguro via Catus</h3>
+          <p>Transações 100% protegidas com criptografia de ponta. Seus dados sempre seguros.</p>
+        </div>
+
+        <div class="advantage-card">
+          <div class="advantage-icon icon-cyan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Acesso Imediato</h3>
+          <p>Após a aprovação do pagamento, seu acesso é liberado instantaneamente. Sem espera.</p>
+        </div>
+
+        <div class="advantage-card">
+          <div class="advantage-icon icon-pink">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          </div>
+          <h3>Cancele Quando Quiser</h3>
+          <p>Sem multas, sem burocracia. Você tem total liberdade para cancelar a qualquer momento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== DEPOIMENTOS ======== -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Depoimentos</span>
+        <h2 class="section-title">O que nossos clientes <span class="gradient-text">dizem</span></h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Melhor IPTV que já usei! Qualidade 4K real, sem travamento nenhum. Cancelei a TV a cabo e não me arrependo."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RM</div>
+            <div>
+              <strong>Rafael M.</strong>
+              <span>Cliente há 8 meses</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"O suporte é incrível, responderam minha dúvida em 5 minutos! E o catálogo de séries é gigante, tem tudo que eu quero."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AL</div>
+            <div>
+              <strong>Ana L.</strong>
+              <span>Cliente há 1 ano</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Uso em 3 TVs e em todos os celulares da família. Funciona perfeito em todos. O plano fidelidade vale muito a pena!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">CS</div>
+            <div>
+              <strong>Carlos S.</strong>
+              <span>Cliente há 6 meses</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FAQ ======== -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Perguntas <span class="gradient-text">frequentes</span></h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Como funciona o acesso após a assinatura?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Após a confirmação do pagamento via Catus, você recebe seus dados de acesso instantaneamente por e-mail ou WhatsApp. É só instalar o aplicativo no seu dispositivo e começar a assistir!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quais dispositivos são compatíveis?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>A Sunplay funciona em Smart TVs (Samsung, LG, etc.), TV Box, Amazon Fire Stick, celulares Android e iPhone, tablets e computadores. Compatível com a maioria dos dispositivos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Posso usar em mais de um dispositivo?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Dependendo do seu plano, você pode conectar até 3 dispositivos simultaneamente. Perfeito para toda a família.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>O que é o pagamento via Catus?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Catus é nossa plataforma de pagamento parceira que garante transações 100% seguras com criptografia de ponta. Aceita PIX, cartão de crédito e boleto bancário.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Como funciona o plano Fidelidade?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>No plano Fidelidade, você paga R$ 50,00 no primeiro mês e apenas R$ 25,00/mês nos 11 meses seguintes. É o menor custo mensal disponível, ideal para quem quer economizar a longo prazo.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Posso cancelar a qualquer momento?</span>
+            <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Nos planos Mensal, Bimestral, Trimestral e Anual você pode cancelar quando quiser, sem multas. O plano Fidelidade tem um compromisso de 12 meses para garantir o preço reduzido.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTATO ======== -->
+  <section class="section contact-section" id="contato">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contato</span>
+        <h2 class="section-title">Fale com a <span class="gradient-text">nossa equipe</span></h2>
+        <p class="section-desc">Estamos prontos para te ajudar. Escolha o canal que preferir.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+          </div>
+          <h3>WhatsApp</h3>
+          <p>Atendimento rápido e direto pelo WhatsApp. Resposta em minutos!</p>
+          <a href="#" class="btn btn-primary btn-sm">Chamar no WhatsApp</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon icon-cyan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3>E-mail</h3>
+          <p>Envie sua mensagem e retornamos em até 24 horas.</p>
+          <a href="mailto:contato@sunplay.tv" class="btn btn-outline btn-sm">Enviar E-mail</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon icon-pink">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Suporte 24h</h3>
+          <p>Nossa equipe está disponível 24 horas por dia, 7 dias por semana.</p>
+          <a href="#" class="btn btn-outline btn-sm">Abrir Chamado</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CTA FINAL ======== -->
+  <section class="cta-section">
+    <div class="cta-bg">
+      <div class="cta-sun-glow"></div>
+    </div>
+    <div class="container cta-content">
+      <h2 class="cta-title">Pronto para transformar seu <span class="gradient-text">entretenimento?</span></h2>
+      <p class="cta-desc">Junte-se a milhares de clientes satisfeitos. Acesso imediato após a aprovação do pagamento.</p>
+      <a href="#planos" class="btn btn-primary btn-lg">
+        <span>Assinar Agora</span>
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo footer-logo">
+            <span class="logo-sun"></span>
+            <span class="logo-text">SUNPLAY</span>
+          </a>
+          <p>A melhor experiência de streaming do Brasil. Qualidade, variedade e suporte que você merece.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#vantagens">Vantagens</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Suporte</h4>
+          <ul>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#">Central de Ajuda</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Pagamento</h4>
+          <ul>
+            <li><a href="#">PIX</a></li>
+            <li><a href="#">Cartão de Crédito</a></li>
+            <li><a href="#">Boleto Bancário</a></li>
+            <li><a href="#">Pagamento Seguro Catus</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sunplay IPTV. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
